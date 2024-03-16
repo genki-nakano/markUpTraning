@@ -1,0 +1,112 @@
+html, body{
+    height: 100%;
+}
+
+body{
+    font-family: "Roboto";
+}
+
+.text_type_white{
+    color: white;
+}
+
+.portfolio_container{
+    display: flex;
+}
+
+/* プロフィール */
+.profile_container{
+    background: #333;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    gap: 40px 0px;
+    margin: 80px 40px 0 40px;
+}
+
+.profile__user{
+    display: flex;
+    gap: 0px 32px;
+    align-items: center;
+}
+
+.profile__user__img{
+    width: 80px;
+    height: 80px;
+    border-radius: 10000px;
+    object-fit: cover;
+}
+
+.profile__user__text{
+    display: flex;
+    flex-direction: column;
+    gap: 8px 0px;
+}
+
+.profile__user__text__name{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.profile__user__text__job{
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.profile__text{
+    width:320px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 200%;
+}
+
+
+
+/* Works */
+.works_container{
+    margin: 0 auto;
+}
+.works{
+    display: block;
+    text-align: center;
+    margin: 80px 0 80px 0;
+}
+
+.title{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 150%;
+    margin: 0px;
+    color: #333;
+}
+.subtitle{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 200%;
+    margin: 0 0 40px 0;
+    color: #333;
+}
+
+.works__contentsWrapper{
+    display: grid;
+    grid-template-rows: 212px 212px 212px;
+    grid-template-columns: 240px 240px 240px;
+    gap: 40px 64px;
+}
+.works__contentsWrapper__contents{
+    text-align: center;
+}
+.works__contentsWrapper__contents__img{
+    width: 240px;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 8px;
+}
+.works__contentsWrapper__contents__text{
+    width: 240px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 200%;
+}
