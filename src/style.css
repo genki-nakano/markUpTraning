@@ -3,8 +3,23 @@ body{
     color: #333333;
 }
 
+.portfolio-content{
+    display: grid;
+    grid-template-columns: minmax(100px,400px) 1fr;
+}
+
+/* サブコンテンツ */
+
 .prtfolio-sub-section{
     background-color: #333333;
+    padding: 80px 40px;
+}
+
+.creater-info__name-wrapper{
+    display: grid;
+    gap: 32px;
+    grid-template-columns: 80px 1fr;
+    align-items: center;
 }
 
 .creater-info__name-wrapper .face-image{
@@ -14,14 +29,14 @@ body{
     border-radius: 100%;
 }
 
-.creater-info__name-wrapper .name{
+.main-info .name{
     font-size: 18px;
     font-weight: bold;
     line-height: 1.35;
     color: white;
 }
 
-.creater-info__name-wrapper .job{
+.main-info .job{
     font-size: 13px;
     line-height: 1.35;
     color: white;
@@ -31,18 +46,35 @@ body{
     font-size: 13px;
     line-height: 2.0;
     color: white;
+    margin-top: 40px;
 }
 
 .creater-info__sub-info .hobby-text{
     font-size: 13px;
     line-height: 2.0;
     color: white;
+    margin-top: 40px;
 }
 
 .creater-info__sub-info .sns-text{
+    margin-top: 40px;
+}
+
+.sns-text__link{
     font-size: 13px;
     line-height: 2.0;
     color: white;
+}
+
+/* メインコンテンツ */
+
+.portfolio-main-section{
+    margin: 0 auto;
+    padding: 80px 0;
+}
+
+.work-content__title{
+    text-align: center;
 }
 
 .work-content__title .title-large{
@@ -56,6 +88,14 @@ body{
     line-height: 2.0;
 }
 
+.work-content__work-list{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows:repeat(3, 1fr);
+    gap: 40px 64px;
+}
+
 .item__img{
     width: 240px;
     height: 180px;
@@ -65,4 +105,5 @@ body{
 .item__name{
     font-size: 13px;
     line-height: 2.0;
+    margin-top: 8px;
 }
