@@ -88,6 +88,8 @@ body{
     line-height: 2.0;
 }
 
+/* 作品一覧 */
+
 .work-content__work-list{
     margin-top: 40px;
     display: grid;
