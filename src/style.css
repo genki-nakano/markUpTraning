@@ -83,6 +83,17 @@ body{
     line-height: 1.8;
 }
 
+.work-content__title .title-middle{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.8;
+}
+
+.work-content__title .title-default{
+    font-size: 18px;
+    line-height: 1.8;
+}
+
 .work-content__title .title-small{
     font-size: 12px;
     line-height: 2.0;
@@ -98,6 +109,11 @@ body{
     gap: 40px 64px;
 }
 
+.item:hover{
+    opacity: 0.5;
+    transition: 0.15s ;
+}
+
 .item__img{
     width: 240px;
     height: 180px;
@@ -108,4 +124,32 @@ body{
     font-size: 13px;
     line-height: 2.0;
     margin-top: 8px;
+}
+
+/* 作品詳細 */
+
+.work{
+    margin-top: 40px;
+}
+
+.work__img{
+    width: 800px;
+    height: 600px;
+    object-fit: cover;  
+}
+
+.work__text{
+    margin: 40px auto;
+    max-width: 600px;
+    font-size: 13px;
+    line-height: 2.0;
+}
+
+.back-link{
+    color: #4F4F4F;
+}
+
+.back-link:hover{
+    opacity: 0.5;
+    transition: 0.15s;
 }
