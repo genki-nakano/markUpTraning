@@ -5,7 +5,8 @@ body{
 
 .portfolio-content{
     display: grid;
-    grid-template-columns: minmax(100px,400px) 1fr;
+    grid-template-columns: 400px 1fr;
+    min-height: 100%;
 }
 
 /* サブコンテンツ */
@@ -108,6 +109,24 @@ body{
     grid-template-rows:repeat(3, 1fr);
     gap: 40px 64px;
 }
+@media (max-width: 1300px) {
+    .work-content__work-list{
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns:repeat(2, 1fr);
+        grid-template-rows:repeat(5, 1fr);
+        gap: 40px 64px;
+    }
+}
+@media (max-width: 1000px) {
+    .work-content__work-list{
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns:repeat(1, 1fr);
+        grid-template-rows:repeat(9, 1fr);
+        gap: 40px 64px;
+    }
+}
 
 .item:hover{
     opacity: 0.5;
@@ -133,13 +152,16 @@ body{
 }
 
 .work__img{
-    width: 800px;
-    height: 600px;
+    aspect-ratio: 4 / 3;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
     object-fit: cover;  
 }
 
 .work__text{
     margin: 40px auto;
+    padding: 0 24px;
     max-width: 600px;
     font-size: 13px;
     line-height: 2.0;
@@ -147,9 +169,85 @@ body{
 
 .back-link{
     color: #4F4F4F;
+    padding: 0 24px;
 }
 
 .back-link:hover{
     opacity: 0.5;
     transition: 0.15s;
+}
+
+
+/* スマホサイズ */
+@media screen and (max-width: 700px) {
+    
+    .portfolio-content{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    /* サブコンテンツ */
+    
+    .prtfolio-sub-section{
+        padding: 80px 24px;
+    }
+    
+    /* メインコンテンツ */
+    
+    .portfolio-main-section{
+        margin: 0;
+        padding: 64px 0;
+        border-top:24px solid #333333;
+    }
+    
+    .work-content__title{
+        text-align: center;
+    }
+    
+    .work-content__title .title-large{
+        font-size: 36px;
+        font-weight: bold;
+        line-height: 1.8;
+    }
+    
+    /* 作品一覧 */
+    
+    .work-content__work-list{
+        margin: 40px 24px 0px;
+        display: grid;
+        grid-template-columns:repeat(1, 1fr);
+        grid-template-rows:repeat(9, 1fr);
+        gap: 40px 64px;
+    }
+    
+    .item__img{
+        aspect-ratio: 327 / 180;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    
+    .item__name{
+        font-size: 13px;
+        line-height: 2.0;
+        margin-top: 8px;
+    }
+    
+    /* 作品詳細 */
+    
+    .work{
+        margin-top: 40px;
+    }
+
+    .work__img{
+        aspect-ratio: 4 / 3;
+        width: 100%;
+        height: auto;
+        object-fit: cover;  
+    }
+    
+    .work__text{
+        padding: 0 24px;
+
+    }
 }
