@@ -6,12 +6,12 @@ body{
 .portfolio-content{
     display: grid;
     grid-template-columns: 400px 1fr;
-    min-height: 100%;
+    min-height: 100vh;
 }
 
 /* サブコンテンツ */
 
-.prtfolio-sub-section{
+.portfolio-sub-section{
     background-color: #333333;
     padding: 80px 40px;
 }
@@ -111,20 +111,14 @@ body{
 }
 @media (max-width: 1300px) {
     .work-content__work-list{
-        margin-top: 40px;
-        display: grid;
         grid-template-columns:repeat(2, 1fr);
         grid-template-rows:repeat(5, 1fr);
-        gap: 40px 64px;
     }
 }
 @media (max-width: 1000px) {
     .work-content__work-list{
-        margin-top: 40px;
-        display: grid;
         grid-template-columns:repeat(1, 1fr);
         grid-template-rows:repeat(9, 1fr);
-        gap: 40px 64px;
     }
 }
 
@@ -188,7 +182,7 @@ body{
     
     /* サブコンテンツ */
     
-    .prtfolio-sub-section{
+    .portfolio-sub-section{
         padding: 80px 24px;
     }
     
@@ -211,14 +205,6 @@ body{
     }
     
     /* 作品一覧 */
-    
-    .work-content__work-list{
-        margin: 40px 24px 0px;
-        display: grid;
-        grid-template-columns:repeat(1, 1fr);
-        grid-template-rows:repeat(9, 1fr);
-        gap: 40px 64px;
-    }
     
     .item__img{
         aspect-ratio: 327 / 180;
