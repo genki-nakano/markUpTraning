@@ -8,5 +8,8 @@
   },
   "scripts": {
     "dev": "parcel src/index.html"
+  },
+  "dependencies": {
+    "swiper": "^11.1.1"
   }
 }

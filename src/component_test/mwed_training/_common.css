@@ -1,0 +1,15 @@
+body{
+    font-family: "Hiragino Kaku Gothic Pro", sans-serif, HelveticaNeue;
+    color: #333333;
+    height: 100vh;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 980px;
+    height: 100%;
+    margin: 0 auto;
+}
